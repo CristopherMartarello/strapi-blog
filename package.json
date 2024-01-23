@@ -7,10 +7,12 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "cd plugins/wysiwyg && npm i"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "4.17.0",
+    "@strapi/plugin-graphql": "^4.17.1",
     "@strapi/plugin-i18n": "4.17.0",
     "@strapi/plugin-users-permissions": "4.17.0",
     "@strapi/provider-upload-cloudinary": "^4.17.0",
